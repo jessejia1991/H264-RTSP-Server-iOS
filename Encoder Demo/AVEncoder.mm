@@ -399,10 +399,6 @@ static unsigned int to_host(unsigned char* p)
                 _bitspersecond += (bytes * 8);
             }
         }
-        else
-        {
-            NSLog(@"no pts for buffer");
-        }
     }
     if (_outputBlock != nil)
     {

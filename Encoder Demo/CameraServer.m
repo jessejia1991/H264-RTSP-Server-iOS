@@ -9,6 +9,7 @@
 #import "CameraServer.h"
 #import "AVEncoder.h"
 #import "RTSPServer.h"
+#import "AVFoundation/AVCaptureDevice.h"
 
 static CameraServer* theServer;
 
@@ -44,6 +45,13 @@ static CameraServer* theServer;
 
 - (void) startup
 {
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+    [request setHTTPMethod:@"GET"];
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        }];
+    [postDataTask resume];
     if (_session == nil)
     {
         NSLog(@"Starting up server");

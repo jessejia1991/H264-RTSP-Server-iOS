@@ -10,6 +10,7 @@
 #import "RTSPClientConnection.h"
 #import "ifaddrs.h"
 #import "arpa/inet.h"
+#import "net/if.h"
 
 @interface RTSPServer ()
 

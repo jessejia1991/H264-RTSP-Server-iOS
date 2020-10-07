@@ -207,12 +207,18 @@
 				CLASSPREFIX = EncoderDemo;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Geraint Davies";
+				TargetAttributes = {
+					8412559B16A035E3001749D9 = {
+						DevelopmentTeam = PEXNGQ76AS;
+					};
+				};
 			};
 			buildConfigurationList = 8412559616A035E3001749D9 /* Build configuration list for PBXProject "Encoder Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 8412559116A035E3001749D9;
@@ -345,9 +351,12 @@
 		841255C416A035E3001749D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = PEXNGQ76AS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Encoder Demo/Encoder Demo-Prefix.pch";
 				INFOPLIST_FILE = "Encoder Demo/Encoder Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.punchman.Encoder-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -356,9 +365,12 @@
 		841255C516A035E3001749D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = PEXNGQ76AS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Encoder Demo/Encoder Demo-Prefix.pch";
 				INFOPLIST_FILE = "Encoder Demo/Encoder Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "one.punchman.Encoder-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
